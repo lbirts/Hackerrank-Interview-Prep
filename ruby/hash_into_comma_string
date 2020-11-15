@@ -1,7 +1,5 @@
 def list names
   # TODO
-  names.map! do |n|
-    n[:name]
-  end
-  names.join(", ").reverse.sub(",", "& ").reverse
+  # names.map(&:values)
+  names.map { |n| n[:name] }.join(", ").reverse.sub(",", "& ").reverse
 end
