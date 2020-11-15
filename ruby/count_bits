@@ -1,0 +1,7 @@
+def count_bits(n)
+  # TODO: Program me
+  count = 0
+  bit = n.to_s(2)
+  ones = bit.split("").select { |num| num == "1" } 
+  return ones.length()
+end
